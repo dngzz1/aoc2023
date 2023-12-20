@@ -1,4 +1,4 @@
-cabal-version: 3.8
+cabal-version: 3.6
 
 name:           advent-of-code
 version:        0.1.0.0
@@ -30,6 +30,7 @@ common deps
     , bytestring
     , containers
     , matrix
+    , text
     , vector
     , split
     , search-algorithms
@@ -43,3 +44,9 @@ common deps
   default-language: Haskell2010
 
 -- Do not touch after this line. aoc-hs will edit it
+executable day-1
+  import: deps
+  hs-source-dirs:
+      solutions
+  main-is: day-1.hs
+
