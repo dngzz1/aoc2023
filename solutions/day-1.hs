@@ -1,6 +1,5 @@
 module Main where
 
-import Data.ByteString qualified as B
 import Data.Char (isDigit)
 import Data.Text (pack, replace, unpack)
 import System.Environment (getArgs)
